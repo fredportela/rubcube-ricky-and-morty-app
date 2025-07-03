@@ -25,7 +25,7 @@ src/
  │   └── episodeService.ts
  ├── components/            # Componentes reaproveitáveis
  │   └── CharacterCard.tsx
- │   └── EpisodeCard.tsx
+ │   └── PersonCard.tsx
  ├── navigation/            # Navegação (stacks e tabs)
  │   └── AppNavigator.tsx
  ├── screens/               # Telas
@@ -37,19 +37,45 @@ src/
  │   └── favoritesStorage.ts
  └── App.tsx                # Entry point
 
----
+```
 
 ## 📸 Prints e evidências
 
-| Lista de Personagens | Detalhe do Personagem | Episódio com Personagens |
-|---------------------:|---------------------:|------------------------:|
-| ![Lista](docs/screenshot_list.png) | ![Detalhe](docs/screenshot_detail.png) | ![Episódio](docs/screenshot_episode.png) |
-
-| Favoritos | Exclusão de Favorito |
-|---------:|---------------------:|
-| ![Favoritos](docs/screenshot_favorites.png) | ![Exclusão](docs/screenshot_remove.png) |
+### ✅ Lista de personagens
+![Lista](docs/screenshot_list.png)
+Tela inicial do aplicativo listando personagens da série Rick and Morty.  
+Inclui filtro pelo nome no topo da tela.
 
 ---
+
+### 🧙 Detalhe do personagem
+![Detalhe](docs/screenshot_detail.png)
+Ao clicar em um personagem, abre uma tela com detalhes:
+- Nome, status, espécie, gênero
+- Localização
+- Lista de episódios em que participou
+
+---
+
+### 🎬 Detalhe do episódio
+![Episódio](docs/screenshot_episode.png)
+Ao selecionar um episódio na tela do personagem, mostra todos os personagens que participaram do episódio.
+
+---
+
+### ⭐ Favoritos
+![Favoritos](docs/screenshot_favorites.png)
+Tela que exibe os personagens salvos como favoritos.
+Os favoritos são persistidos localmente via AsyncStorage.
+
+---
+
+### ❌ Exclusão de favorito
+![Exclusão](docs/screenshot_remove.png)
+Exemplo de remoção de personagem da lista de favoritos (ação realizada com toque ou botão).
+
+---
+
 
 ## ▶️ Como rodar e testar a aplicação
 
