@@ -39,7 +39,7 @@ export default function AppNavigator() {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ color, size }) => {
-            let iconName = route.name === 'Personagens' ? 'list' : 'star';
+            let iconName = route.name === 'Home' ? 'list' : 'star';
             return <Icon name={iconName} size={size} color={color} />;
           },
         })}
